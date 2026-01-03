@@ -1,56 +1,83 @@
-# BoardgameListingWebApp
+# springboot-devops-deployment
 
-## Description
+## 📌 Project Overview
+This repository demonstrates my **DevOps and Cloud contribution** to a Java Spring Boot web application (Boardgame Listing Web App).  
+The focus of this project is on **application deployment, CI/CD automation, containerization, cloud infrastructure, and operational support**, rather than core feature development.
 
-**Board Game Database Full-Stack Web Application.**
-This web application displays lists of board games and their reviews. While anyone can view the board game lists and reviews, they are required to log in to add/ edit the board games and their reviews. The 'users' have the authority to add board games to the list and add reviews, and the 'managers' have the authority to edit/ delete the reviews on top of the authorities of users.  
+The application itself is a full-stack board game database system where users can view, add, and manage board games and reviews with role-based access control.
 
-## Technologies
+---
 
+## 🎯 My DevOps Contribution
+
+- Supported deployment and runtime operations of a Spring Boot application
+- Built and maintained CI/CD pipelines using Jenkins
+- Dockerized the application for consistent builds across environments
+- Deployed the application on AWS EC2 (Linux)
+- Performed Linux-level troubleshooting (services, ports, logs, permissions)
+- Integrated GitHub webhook triggers for automated builds
+- Worked with configuration files, builds, and environment issues
+- Ensured application availability and smooth deployments
+
+---
+
+## 🛠 Technologies Used
+
+### Application Stack
 - Java
 - Spring Boot
-- Amazon Web Services(AWS) EC2
-- Thymeleaf
-- Thymeleaf Fragments
-- HTML5
-- CSS
-- JavaScript
 - Spring MVC
-- JDBC
-- H2 Database Engine (In-memory)
-- JUnit test framework
 - Spring Security
-- Twitter Bootstrap
+- JDBC
+- Thymeleaf
+- HTML5, CSS, JavaScript
+- Bootstrap
+- H2 Database (In-memory)
+- JUnit
 - Maven
 
-## Features
+### DevOps & Cloud
+- Linux
+- AWS EC2
+- Jenkins
+- Docker
+- Git & GitHub
+- GitHub Webhooks
+- CI/CD Pipelines
 
-- Full-Stack Application
-- UI components created with Thymeleaf and styled with Twitter Bootstrap
-- Authentication and authorization using Spring Security
-  - Authentication by allowing the users to authenticate with a username and password
-  - Authorization by granting different permissions based on the roles (non-members, users, and managers)
-- Different roles (non-members, users, and managers) with varying levels of permissions
-  - Non-members only can see the boardgame lists and reviews
-  - Users can add board games and write reviews
-  - Managers can edit and delete the reviews
-- Deployed the application on AWS EC2
-- JUnit test framework for unit testing
-- Spring MVC best practices to segregate views, controllers, and database packages
-- JDBC for database connectivity and interaction
-- CRUD (Create, Read, Update, Delete) operations for managing data in the database
-- Schema.sql file to customize the schema and input initial data
-- Thymeleaf Fragments to reduce redundancy of repeating HTML elements (head, footer, navigation)
+---
 
-## How to Run
+## ✨ Application Features (Context)
+
+- Full-stack web application
+- Role-based authentication and authorization
+- Three roles: non-members, users, managers
+- Non-members can view board game lists and reviews
+- Users can add board games and submit reviews
+- Managers can edit and delete reviews
+- CRUD operations using JDBC
+- Secure login using Spring Security
+- UI built with Thymeleaf and styled with Bootstrap
+- Schema.sql used for initial database setup
+- Thymeleaf fragments for reusable UI components
+
+---
+
+## 🚀 CI/CD Workflow
+
+1. Developer pushes code to GitHub
+2. GitHub webhook triggers Jenkins pipeline
+3. Jenkins performs:
+   - Maven build
+   - Dependency resolution
+   - Docker image build
+4. Application is deployed to AWS EC2
+5. Logs and services are monitored on the Linux server
+
+---
+
+## ▶️ How to Run Locally
 
 1. Clone the repository
-2. Open the project in your IDE of choice
-3. Run the application
-4. To use initial user data, use the following credentials.
-  - username: bugs    |     password: bunny (user role)
-  - username: daffy   |     password: duck  (manager role)
-5. You can also sign-up as a new user and customize your role to play with the application! 😊
-
-
-Trying with github webhook trigger in M2 batch.
+   ```bash
+   git clone https://github.com/<your-username>/springboot-devops-deployment.git
