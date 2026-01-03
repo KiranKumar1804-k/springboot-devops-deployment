@@ -80,4 +80,4 @@ The application itself is a full-stack board game database system where users ca
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/<your-username>/springboot-devops-deployment.git
+   git clone https://github.com/KiranKumar1804-k/springboot-devops-deployment.git
